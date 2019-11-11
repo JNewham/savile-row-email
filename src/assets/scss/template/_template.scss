@@ -1,0 +1,33 @@
+// Header
+
+.sub-head {
+  text-transform: uppercase;
+}
+
+// Body 
+
+h1 {
+  margin: 0;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.outline {
+  background-color: white;
+  border: solid 2px #0d2431;
+}
+
+.button.expanded {
+  td:not(.expander) {
+    width: 100%;
+  }
+}
+
+.mobile-spacer {
+  @media only screen and (max-width: 616px) {
+    margin-bottom: 16px;
+  }
+}
