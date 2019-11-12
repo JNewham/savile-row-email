@@ -20,7 +20,7 @@ $primary-color: #0d2431;
 $secondary-color: #FF8000;
 $success-color: #ffffff;
 $warning-color: #ffffff;
-$alert-color: #ec5840;
+$alert-color: #f4f7fa;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -82,7 +82,7 @@ $subheader-font-weight: $global-font-weight;
 $subheader-margin-top: 4px;
 $subheader-margin-bottom: 8px;
 $hr-width: $global-width;
-$hr-border: 1px solid $black;
+$hr-border: 2px solid $primary-color;
 $hr-margin: 20px auto;
 $anchor-text-decoration: none;
 $anchor-color: $secondary-color;
@@ -125,8 +125,8 @@ $callout-margin-bottom: 0;
 $callout-border: none;
 $callout-border-secondary: 1px solid darken($secondary-color, 20%);
 $callout-border-success: 1px solid darken($success-color, 20%);
-$callout-border-warning: 2px solid $primary-color;;
-$callout-border-alert: 1px solid darken($alert-color, 20%);
+$callout-border-warning: 2px solid $primary-color;
+$callout-border-alert: 2px solid $primary-color;
 
 // 7. Menu
 // -------

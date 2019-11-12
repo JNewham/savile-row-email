@@ -1,0 +1,128 @@
+<div om:block="Image based product recommendations - 4x1">
+    {% set max_products=4 %}
+    {% set cols=4 %}
+    <div om:id="prod-recs4" om:editable="product-recs">
+        {% for x in range(max_products) %} {% if loop.index0 % cols == 0 %}
+        <table class="row collapse" style="display: table; padding: 0; position: relative; width: 100%">
+            <tbody>
+                <tr>
+                    {% endif %} {% if recs.baseClickUrl and recs.baseImageUrl %}
+                    <th class="small-6 large-4 columns first last"
+                        style="font-weight: normal; margin: 0 auto; padding-bottom: 16px; padding-left: 10px; padding-right: 10px; text-align: center; width: 100px">
+                        <table style="width: 100%">
+                            <tr>
+                                <th style="font-weight: normal; text-align: center">
+                                    <center style="min-width: 100px; width: 100%">
+                                        <a href="{{recs.baseClickUrl}}&slot={{x+1}}&email={{ profile.email | urlencode }}&cachebuster={{ email.campaign_identifier | urlencode }}"
+                                            target="_blank" align="center" class="float-center"
+                                            style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; hyphens: none; margin-bottom: 0px; text-decoration: none; width: 100%">
+                                            <img class="float-center small-float-center"
+                                                src="{{recs.baseImageUrl}}&slot={{x+1}}&scale=2&size=100x180&email={{ profile.email | urlencode }}&cachebuster={{ email.campaign_identifier | urlencode }}&font=opensans"
+                                                width="130"
+                                                style="border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto">
+                                        </a>
+                                    </center>
+
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+
+                    {% else %}
+                    <p
+                        style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; width: 100%">
+                        Recommendations not yet configured</p>
+
+                    {% endif %} {% if loop.index % cols == 0 %}
+                </tr>
+            </tbody>
+        </table>
+        {% endif %} {% endfor %}
+    </div>
+</div>
+
+<div om:block="Image based product recommendations - 3x1">
+    {% set max_products=3 %}
+    {% set cols=3 %}
+    <div om:id="prod-recs3" om:editable="product-recs">
+        {% for x in range(max_products) %} {% if loop.index0 % cols == 0 %}
+        <table class="row collapse" style="display: table; padding: 0; position: relative; width: 100%">
+            <tbody>
+                <tr>
+                    {% endif %} {% if recs.baseClickUrl and recs.baseImageUrl %}
+                    <th class="small-12 large-4 columns first last"
+                        style="font-weight: normal; margin: 0 auto; padding-bottom: 16px; padding-left: 10px; padding-right: 10px; text-align: center; width: 208px">
+                        <table style="width: 100%">
+                            <tr>
+                                <th style="font-weight: normal; text-align: center">
+                                    <center style="min-width: 152px; width: 100%">
+                                        <a href="{{recs.baseClickUrl}}&slot={{x+1}}&email={{ profile.email | urlencode }}&cachebuster={{ email.campaign_identifier | urlencode }}"
+                                            target="_blank" align="center" class="float-center"
+                                            style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; hyphens: none; margin-bottom: 0px; text-decoration: none; width: 100%">
+                                            <img class="float-center small-float-center small-60column"
+                                                src="{{recs.baseImageUrl}}&slot={{x+1}}&scale=2&size=180x260&email={{ profile.email | urlencode }}&cachebuster={{ email.campaign_identifier | urlencode }}&font=opensans"
+                                                width="180"
+                                                style="border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto">
+                                        </a>
+                                    </center>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+
+                    {% else %}
+                    <p
+                        style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; width: 100%">
+                        Recommendations not yet configured</p>
+
+                    {% endif %} {% if loop.index % cols == 0 %}
+                </tr>
+            </tbody>
+        </table>
+        {% endif %} {% endfor %}
+    </div>
+</div>
+
+
+
+<div om:block="Image based product recommendations - 3x2">
+    {% set max_products=6 %}
+    {% set cols=3 %}
+    <div om:id="prod-recs6" om:editable="product-recs">
+        {% for x in range(max_products) %} {% if loop.index0 % cols == 0 %}
+        <table class="row collapse" style="display: table; padding: 0; position: relative; width: 100%">
+            <tbody>
+                <tr>
+                    {% endif %} {% if recs.baseClickUrl and recs.baseImageUrl %}
+                    <th class="small-12 large-4 columns first last"
+                        style="font-weight: normal; margin: 0 auto; padding-bottom: 16px; padding-left: 10px; padding-right: 10px; text-align: center; width: 208px">
+                        <table style="width: 100%">
+                            <tr>
+                                <th style="font-weight: normal; text-align: center">
+                                    <center style="min-width: 152px; width: 100%">
+                                        <a href="{{recs.baseClickUrl}}&slot={{x+1}}&email={{ profile.email | urlencode }}&cachebuster={{ email.campaign_identifier | urlencode }}"
+                                            target="_blank" align="center" class="float-center"
+                                            style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; hyphens: none; margin-bottom: 0px; text-decoration: none; width: 100%">
+                                            <img class="float-center small-float-center small-60column"
+                                                src="{{recs.baseImageUrl}}&slot={{x+1}}&scale=2&size=180x260&email={{ profile.email | urlencode }}&cachebuster={{ email.campaign_identifier | urlencode }}&font=opensans"
+                                                width="180"
+                                                style="border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto">
+                                        </a>
+                                    </center>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+
+                    {% else %}
+                    <p
+                        style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; width: 100%">
+                        Recommendations not yet configured</p>
+
+                    {% endif %} {% if loop.index % cols == 0 %}
+                </tr>
+            </tbody>
+        </table>
+        {% endif %} {% endfor %}
+    </div>
+</div>

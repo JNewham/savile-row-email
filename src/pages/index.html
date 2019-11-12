@@ -14,7 +14,7 @@ subject: My Hero Email Template Subject
       <small class="sub-head" om:editable om:id="13">Be quick, this exclusive offer won’t be around for long</small>
     </columns> 
     <columns large="4">
-      <p class="text-right"><small><a style="color: #0d2431;" href='#'>View online here >></a></small></p>
+      <p class="text-right"><small><a style="color: #0d2431;" href='{{{{raw}}}}{{ email.archive_url }}{{{{/raw}}}}'>View online here >></a></small></p>
     </columns>
   </row>
 
@@ -53,23 +53,28 @@ subject: My Hero Email Template Subject
   <!-- Spacer END -->
 
   <!-- Pre-Head -->
-  <callout class="warning">
-<row>
-  <columns large="2">
-    <img class="float-left" src="http://placehold.it/50x50">
-  </columns>
-  <columns large="8">
-    <h2 class="text-center">hello</h2>
-  </columns>
-  <columns large="2">
-    <img class="float-right" src="http://placehold.it/50x50">
-  </columns>
-</row>
-</callout>
 
+  <div om:block="pre-header">
+    <row>
+      <columns>
+        <wrapper class="pre-header-wrap">
+          <row>
+            <columns large="1" class="show-for-large">
+              <a href="" om:editable="image" om:id="16"></a><img class="pre-header-img" width="50" height="46" src="http://placehold.it/50x46"></a>
+            </columns>
+            <columns large="10" small="12">
+              <h2 om:editable om:id="17" href="#" class="text-center pre-header">lorem ipsum dolar amet</h2>
+            </columns>
+            <columns large="1" class="show-for-large align-right">
+              <a href="" om:editable="image" om:id="18"></a><img class="pre-header-img float-right" width="50" height="46" src="http://placehold.it/50x46"></a>
+            </columns>
+          </row>
+        </wrapper>
+      </columns>
+    </row>
+  </div>
 
-  <!-- Pre-Head  END-->
-
+  <!-- Pre-Head END-->
 
   <!-- Image -->
 
@@ -145,24 +150,105 @@ subject: My Hero Email Template Subject
 
   <!-- Callout END -->
 
-  <!-- Terms and Conditions -->
+  <spacer size="16"></spacer>
 
-  <div om:block="Terms">
+  <!-- Shirt Guide -->
+
+  <div om:block="Shirt Size Guide">
     <row>
-      <columns large="12">
-        <callout class="warning">
-        <p class="text-center" style="font-size:12px;"><strong>Terms and Conditions</strong></p>
-        <p class="text-center" style="font-size:12px;" om:editable om:id="15">This code is exclusive to the email recipient and may not be shared on any other site. This code may not be used in conjunction with any other offer including cashback or points. *This offer is not applicable to Made-to-Measure. Offer expires on 14th November</p>
-        </callout>
+      <columns>
+        <wrapper class="shirt-section">
+          <row>
+            <columns>
+              <h2 class="text-center shirt-section-header">Click your size for quicker shopping</h2>
+            </columns>
+          </row>
+        </wrapper>
+        <wrapper class="shirt-title">
+          <row>
+            <columns>
+              <h5 class="shirt-title-text"><a style="color: #ffffff" href="https://savilerowco.com/shirts?filtercategoryROOT%2FShirts=Formal%20Shirts&followSearch=9714&limit=36&verbose=true#refine-anchor"><strong>FORMAL SHIRTS</strong></a></h5>
+            </columns>
+          </row>
+        </wrapper>
+        <wrapper class="shirt-wrap">
+          <row>
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color: #0D2431" href="https://savilerowco.com/shirts?filtersize=37cm%20%2F%2014%201%2F2%22&followSearch=9714&limit=36&verbose=true#refine-anchor">14 1/2"</a></h4>
+            </columns>
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color: #0D2431" href="https://savilerowco.com/shirts?filtersize=38cm%20%2F%2015%22&followSearch=9714&limit=36&verbose=true#refine-anchor">15"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color: #0D2431" href="https://savilerowco.com/shirts?filtersize=39.5cm%20%2F%2015%201%2F2%22&followSearch=9714&limit=36&verbose=true#refine-anchor">15 1/2"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color: #0D2431" href="https://savilerowco.com/shirts?filtersize=40.5cm%20%2F%2016%22&followSearch=9714&limit=36&verbose=true#refine-anchor">16"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color: #0D2431" href="https://savilerowco.com/shirts?filtersize=42cm%20%2F%2016%201%2F2%22&followSearch=9714&limit=36&verbose=true#refine-anchor">16 1/2"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color: #0D2431" href="https://savilerowco.com/shirts?filtersize=43cm%20%2F%2017%22&followSearch=9714&limit=36&verbose=true#refine-anchor">17"</a></h4>
+            </columns> 
+          </row>
+          <row>
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=44.5cm%20%2F%2017%201%2F2%22&followSearch=9714&limit=36&verbose=true#refine-anchor">17 1/2"</a></h4>
+            </columns>
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=45.5cm%20%2F%2018%22&followSearch=9714&limit=36&verbose=true#refine-anchor">18"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=47cm%20%2F%2018%201%2F2%22&followSearch=9714&limit=36&verbose=true#refine-anchor">18 1/2"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=48cm%20%2F%2019%22&followSearch=9714&limit=36&verbose=true#refine-anchor">19"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color:#0D2431"  href="https://savilerowco.com/shirts?filtersize=49.5cm%20%2F%2019%201%2F2%22&followSearch=9714&limit=36&verbose=true#refine-anchor">19 1/2"</a></h4>
+            </columns> 
+            <columns class="shirt-table-cell" large="2" small="6">
+              <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=51cm%20%2F%2020%22&followSearch=9714&limit=36&verbose=true#refine-anchor">20"</a></h4>
+            </columns> 
+          </row>
+        </wrapper>
+        <wrapper class="shirt-title">
+            <row>
+              <columns>
+                <h5 class="shirt-title-text"><a style="color: #ffffff" href="https://savilerowco.com/shirts?filtercategoryROOT%2FShirts=Casual%20Shirts&followSearch=9714&limit=36&verbose=true#refine-anchor"><strong>CASUAL SHIRTS</strong></a></h5>
+              </columns>
+            </row>
+          </wrapper>
+          <wrapper class="shirt-wrap">
+            <row>
+              <columns class="shirt-table-cell" large="2" small="6">
+                <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=S&followSearch=9714&limit=36&verbose=true#refine-anchor">S</a></h4>
+              </columns>
+              <columns class="shirt-table-cell" large="2" small="6">
+                <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=M&followSearch=9714&limit=36&verbose=true#refine-anchor">M</a></h4>
+              </columns> 
+              <columns class="shirt-table-cell" large="2" small="6">
+                <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=L&followSearch=9714&limit=36&verbose=true#refine-anchor">L</a></h4>
+              </columns> 
+              <columns class="shirt-table-cell" large="2" small="6">
+                <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=XL&followSearch=9714&limit=36&verbose=true#refine-anchor">XL</a></h4>
+              </columns> 
+              <columns class="shirt-table-cell" large="2" small="6">
+                <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=XXL&followSearch=9714&limit=36&verbose=true#refine-anchor">XXL</a></h4>
+              </columns> 
+              <columns class="shirt-table-cell" large="2" small="6">
+                <h4 class="shirt-table-text"><a style="color:#0D2431" href="https://savilerowco.com/shirts?filtersize=XXXL&followSearch=9714&limit=36&verbose=true#refine-anchor">XXXL</a></h4>
+              </columns> 
+            </row>
+          </wrapper>
       </columns>
     </row>
   </div>
-
-  <!-- Terms and Conditions END -->
-
-
-  <!-- Shirt Guide -->
+  
   <!-- Shirt Guide END -->
+
+  <spacer size="16"></spacer>
 
   <!-- Button Blue -->
 
@@ -195,7 +281,6 @@ subject: My Hero Email Template Subject
     <row>
       <columns large="6" small="12">
         <a href="" om:editable="image" om:id="5"><img class="mobile-spacer" width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
-        
       </columns>
       <columns large="6" small="12">
         <a href="" om:editable="image" om:id="6"><img width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
@@ -256,6 +341,270 @@ subject: My Hero Email Template Subject
 
   <!-- Two Col Rich Text END -->
 
+  <!-- Three Col Image -->
+
+  <div om:block="Three Col Image">
+    <row>
+      <columns large="3" small="12">
+        <a href="" om:editable="image" om:id="19"><img class="mobile-spacer" width="179" height="200" alt="" src="http://placehold.it/358x400"></a>
+      </columns>
+      <columns large="3" small="12">
+        <a href="" om:editable="image" om:id="20"><img width="179" height="200" alt="" src="http://placehold.it/358x400"></a>
+      </columns>
+      <columns large="3" small="12">
+        <a href="" om:editable="image" om:id="21"><img width="179" height="200" alt="" src="http://placehold.it/358x400"></a>
+      </columns>
+    </row>
+  </div>
+
+  <!-- Three Col Image END -->
+
+  <!-- Three Col Rich Text -->
+
+  <div om:block="Three Col Rich Text">
+    <row>
+      <columns large="3" small="12">
+        <div om:editable="rich-text" om:id="22"><!-- ometria_remove_begin -->
+          <div style="display: none">
+            <h1></h1>
+            <h2></h2>
+            <h3></h3>
+            <h4></h4>
+            <h5></h5>
+            <h6></h6>
+            <a></a>
+            <strong></strong>
+            <em></em>
+            <u></u>
+            <p>Column One</p>
+            <s></s>
+            <span></span>
+            <ul><li></li></ul>
+            <ol><li></li></ol>
+          </div><!-- ometria_remove_end -->
+        </div>
+      </columns>
+      <columns large="3" small="12">
+        <div om:editable="rich-text" om:id="23"><!-- ometria_remove_begin -->
+          <div style="display: none">
+            <h1></h1>
+            <h2></h2>
+            <h3></h3>
+            <h4></h4>
+            <h5></h5>
+            <h6></h6>
+            <a></a>
+            <strong></strong>
+            <em></em>
+            <u></u>
+            <p>Column Two</p>
+            <s></s>
+            <span></span>
+            <ul><li></li></ul>
+            <ol><li></li></ol>
+          </div><!-- ometria_remove_end -->
+        </div>
+      </columns>
+      <columns large="3" small="12">
+        <div om:editable="rich-text" om:id="24"><!-- ometria_remove_begin -->
+          <div style="display: none">
+            <h1></h1>
+            <h2></h2>
+            <h3></h3>
+            <h4></h4>
+            <h5></h5>
+            <h6></h6>
+            <a></a>
+            <strong></strong>
+            <em></em>
+            <u></u>
+            <p>Column Three</p>
+            <s></s>
+            <span></span>
+            <ul><li></li></ul>
+            <ol><li></li></ol>
+          </div><!-- ometria_remove_end -->
+        </div>
+      </columns>
+    </row>
+  </div>
+
+  <!-- Three Col Rich Text END -->
+
+  <!-- Terms and Conditions -->
+
+  <div om:block="Terms">
+    <row>
+      <columns large="12">
+        <callout class="warning">
+        <p class="text-center" style="font-size:12px; margin-top: 10px;"><strong>Terms and Conditions</strong></p>
+        <p class="text-center" style="font-size:12px;" om:editable om:id="15">This code is exclusive to the email recipient and may not be shared on any other site. This code may not be used in conjunction with any other offer including cashback or points. *This offer is not applicable to Made-to-Measure. Offer expires on 14th November</p>
+        </callout>
+      </columns>
+    </row>
+  </div>
+  
+  <!-- Terms and Conditions END -->
+
+  <!-- Footer -->
+
+    <!-- Commitments -->
+
+    <row>
+      <columns>
+        <wrapper class="commitments-wrapper">
+          <row>
+            <columns>
+              <p class="commitments-title-text">OUR COMMITMENTS</p>
+            </columns>
+          </row>
+        </wrapper>
+      </columns>
+    </row>
+
+    <!-- Commitments END -->
+
+    <!-- Buttons -->
+
+    <row>
+    <columns>
+    
+        <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
+          <tbody>
+              <tr>
+                  <th class="small-12 large-12 columns first last"
+                      style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
+                      <table style="width: 100%">
+                          <tr>
+                              <th style="font-weight: bold; text-align: center">
+                                  <div om:editable="html" om:id="nav-bott1">
+                                      <p class="text-center"
+                                          style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
+                                          <a href="https://savilerowco.com/shirts"
+                                              style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">SHIRTS</a>
+                                      </p>
+                                  </div>
+                              </th>
+                              <th class="expander"
+                                  style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
+                              </th>
+                          </tr>
+                      </table>
+                  </th>
+              </tr>
+          </tbody>
+      </table>
+  
+      <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
+          <tbody>
+              <tr>
+                  <th class="small-12 large-12 columns first last"
+                      style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
+                      <table style="width: 100%">
+                          <tr>
+                              <th style="font-weight: bold; text-align: center">
+                                  <div om:editable="html" om:id="nav-bott2">
+                                      <p class="text-center"
+                                          style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
+                                          <a href="https://savilerowco.com/suits"
+                                              style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">SUITS</a>
+                                      </p>
+                                  </div>
+                              </th>
+                              <th class="expander"
+                                  style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
+                              </th>
+                          </tr>
+                      </table>
+                  </th>
+              </tr>
+          </tbody>
+      </table>
+  
+      <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
+          <tbody>
+              <tr>
+                  <th class="small-12 large-12 columns first last"
+                      style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
+                      <table style="width: 100%">
+                          <tr>
+                              <th style="font-weight: bold; text-align: center">
+                                  <div om:editable="html" om:id="nav-bott3">
+                                      <p class="text-center"
+                                          style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
+                                          <a href="https://savilerowco.com/casual-wear"
+                                              style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">CASUAL
+                                              WEAR</a>
+                                      </p>
+                                  </div>
+                              </th>
+                              <th class="expander"
+                                  style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
+                              </th>
+                          </tr>
+                      </table>
+                  </th>
+              </tr>
+          </tbody>
+      </table>
+  
+      <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
+          <tbody>
+              <tr>
+                  <th class="small-12 large-12 columns first last"
+                      style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
+                      <table style="width: 100%">
+                          <tr>
+                              <th style="font-weight: bold; text-align: center">
+                                  <div om:editable="html" om:id="nav-bott4">
+                                      <p class="text-center"
+                                          style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
+                                          <a href="https://savilerowco.com/accessories"
+                                              style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">ACCESSORIES</a>
+                                      </p>
+                                  </div>
+                              </th>
+                              <th class="expander"
+                                  style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
+                              </th>
+                          </tr>
+                      </table>
+                  </th>
+              </tr>
+          </tbody>
+      </table>
+  
+      <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
+          <tbody>
+              <tr>
+                  <th class="small-12 large-12 columns first last"
+                      style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
+                      <table style="width: 100%">
+                          <tr>
+                              <th style="font-weight: bold; text-align: center">
+                                  <div om:editable="html" om:id="nav-bott5">
+                                      <p class="text-center"
+                                          style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
+                                          <a href="https://savilerowco.com/clearance"
+                                              style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #8d0e0e; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">CLEARANCE</a>
+                                      </p>
+                                  </div>
+                              </th>
+                              <th class="expander"
+                                  style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
+                              </th>
+                          </tr>
+                      </table>
+                  </th>
+              </tr>
+          </tbody>
+      </table>
+</columns>  
+    </row>
+
+  <!-- Buttons END-->
+
+  <!-- Footer END -->
   <center>
     <menu>
       <item href="#">Terms</item>
