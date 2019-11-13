@@ -1,10 +1,16 @@
-// Header
+// Body 
 
-.sub-head {
-  text-transform: uppercase;
+.align-right {
+	text-align: right;
+
+	table,
+	tr,
+	th {
+		text-align: right;
+	}
 }
 
-// Body 
+
 
 h1 {
   margin: 0;
@@ -32,6 +38,13 @@ h1 {
   }
 }
 
+// Pre-Header
+
+.sub-head {
+  text-transform: uppercase;
+}
+
+
 .pre-header {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -40,7 +53,7 @@ h1 {
   letter-spacing: 1px;
 
   @media only screen and (max-width: 616px) {
-    font-size: 15px;
+    font-size: 18px !important;
     margin-top: 3px;
     margin-bottom: 3px;
   }
@@ -53,16 +66,6 @@ h1 {
 
 .pre-header-wrap {
   border: solid 2px #0d2431;
-}
-
-.align-right {
-	text-align: right;
-
-	table,
-	tr,
-	th {
-		text-align: right;
-	}
 }
 
 // Shirt Size Table 
@@ -88,6 +91,10 @@ h1 {
   font-size: 20px;
   border-top: solid 4px white;
   border-bottom: solid 5px white;
+
+  @media only screen and (max-width: 616px) {
+    font-size: 16px !important;
+  }
 }
 
 .shirt-wrap {
@@ -109,6 +116,10 @@ h1 {
   margin-top: 0px;
   margin-bottom: 0px;
   border: 8px solid #0d2431;
+  
+  @media only screen and (max-width: 616px) {
+    font-size: 18px !important;
+  }  
 }
 
 // Footer 
@@ -130,16 +141,41 @@ h1 {
   text-align: center;
 }
 
-// Buttons
-
-.footer-button-text {
-  color: #0d2431;
+.commit-imgs {
+  display: inline;
 }
+
+// Buttons
 
 .alert {
   color: #0d2431;
 }
 
 // Info
+
+.info-text {
+  color: #cdcccc;
+  line-height: 2;
+  text-align: center;
+  font-size: 12px;
+}
+
+// Footer Buttons 
+
+.footer-button-header {
+  background-color: #0d2431;
+}
+
+.footer-button-title-text {
+  color: white;
+  font-weight: bold;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.footer-button-text {
+  color: #0d2431;
+}
+
 
 // Unsub

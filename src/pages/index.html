@@ -150,8 +150,6 @@ subject: My Hero Email Template Subject
 
   <!-- Callout END -->
 
-  <spacer size="16"></spacer>
-
   <!-- Shirt Guide -->
 
   <div om:block="Shirt Size Guide">
@@ -248,9 +246,7 @@ subject: My Hero Email Template Subject
   
   <!-- Shirt Guide END -->
 
-  <spacer size="16"></spacer>
-
-  <!-- Button Blue -->
+  <!-- Button -->
 
   <div om:block="Button">
     <row>
@@ -273,7 +269,31 @@ subject: My Hero Email Template Subject
       </row>
   </div>
 
-  <!-- Button Blue END -->
+  <!-- Button END -->
+
+  <!-- Small Button -->
+
+  <div om:block="Button">
+    <row>
+      <columns>
+        <center>
+          <table class="button">
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td><a om:editable om:id="37" href="#" align="center" class="float-center">Smol Button</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </columns>
+    </row>
+  </div>
+
+  <!-- Small Button END-->
 
   <!-- Two Col Image -->
 
@@ -341,18 +361,48 @@ subject: My Hero Email Template Subject
 
   <!-- Two Col Rich Text END -->
 
+  <!-- Image Left / Text Right -->
+
+  <div om:block="Image Left / Text Right">
+    <row>
+      <columns large="6" small="12">
+        <a href="" om:editable="image" om:id="29"><img class="mobile-spacer" width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
+      </columns>
+      <columns large="6" small="12">
+        <p om:editable om:id="39">lorem ipsum</p>
+      </columns>
+    </row>
+  </div>
+
+  <!-- Image Left / Text Right END -->
+
+  <!-- Text Left / Image Right -->
+
+  <div om:block="Text Left / Image Right">
+    <row>
+      <columns class="mobile-spacer" large="6" small="12">
+        <p om:editable om:id="39">lorem ipsum</p>
+      </columns>
+      <columns large="6" small="12">
+        <a href="" om:editable="image" om:id="29"><img width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
+      </columns>
+    </row>
+  </div>
+
+  <!-- Text Left / Image Right END -->
+
   <!-- Three Col Image -->
 
   <div om:block="Three Col Image">
     <row>
       <columns large="3" small="12">
-        <a href="" om:editable="image" om:id="19"><img class="mobile-spacer" width="179" height="200" alt="" src="http://placehold.it/358x400"></a>
+        <a href="" om:editable="image" om:id="19"><img class="mobile-spacer" width="179" height="200" style="width:100%" alt="" src="http://placehold.it/358x400"></a>
       </columns>
       <columns large="3" small="12">
-        <a href="" om:editable="image" om:id="20"><img width="179" height="200" alt="" src="http://placehold.it/358x400"></a>
+        <a href="" om:editable="image" om:id="20"><img class="mobile-spacer" width="179" height="200" style="width:100%" alt="" src="http://placehold.it/358x400"></a>
       </columns>
       <columns large="3" small="12">
-        <a href="" om:editable="image" om:id="21"><img width="179" height="200" alt="" src="http://placehold.it/358x400"></a>
+        <a href="" om:editable="image" om:id="21"><img width="179" height="200" alt="" style="width:100%" src="http://placehold.it/358x400"></a>
       </columns>
     </row>
   </div>
@@ -462,13 +512,51 @@ subject: My Hero Email Template Subject
       </columns>
     </row>
 
+    <spacer size="16"></spacer>
+
+    <row>
+      <columns large="12">
+        <center>
+          <img class="float-center mobile-spacer" height="25" style="height: 25px; display: inline;" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/bc18ede680dc5f3b655e07cf7c6d9502.jpg">
+          <img class="float-center mobile-spacer" height="25" style="height: 25px; display: inline;" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/a2ae676e3429e5809b635ffa6b260617.jpg">
+          <img class="float-center mobile-spacer" height="25" style="height: 25px; display: inline;" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/e141e2c1266c10e2f420795f3d6eae07.jpg">
+          <img class="float-center mobile-spacer" height="25" style="height: 25px; display: inline;" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/2d893cf0b43b0ed364fe4138becd2908.jpg">
+          <img class="float-center" height="25" style="height: 25px; display: inline;" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/1634db00fe6113b450e2e6b86341f35d.png">
+        </center>
+      </columns>
+    </row>
+
+    <spacer size="16"></spacer>
+
+
     <!-- Commitments END -->
 
     <!-- Buttons -->
 
     <row>
-    <columns>
-    
+      <columns>
+        <wrapper class="footer-button-header show-for-large">
+          <row>
+            <columns large="12">
+              <img class="float-center" height="46" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/7306af5de1a806de6aabf8278cdaa536.jpg">
+            </columns>
+          </row>
+        </wrapper>
+      </columns>
+    </row>
+    <row class="hide-for-large">
+      <columns>
+        <wrapper class="footer-button-header">
+          <row>
+            <columns large="12">
+              <p class="footer-button-title-text">Rated ‘Excellent’ on Trustpilot</p>
+            </columns>
+          </row>
+        </wrapper>
+      </columns>
+    </row>
+    <row>
+      <columns>
         <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
           <tbody>
               <tr>
@@ -549,68 +637,116 @@ subject: My Hero Email Template Subject
       </table>
   
       <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
-          <tbody>
-              <tr>
-                  <th class="small-12 large-12 columns first last"
-                      style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
-                      <table style="width: 100%">
-                          <tr>
-                              <th style="font-weight: bold; text-align: center">
-                                  <div om:editable="html" om:id="nav-bott4">
-                                      <p class="text-center"
-                                          style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
-                                          <a href="https://savilerowco.com/accessories"
-                                              style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">ACCESSORIES</a>
-                                      </p>
-                                  </div>
-                              </th>
-                              <th class="expander"
-                                  style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
-                              </th>
-                          </tr>
-                      </table>
+        <tbody>
+          <tr>
+            <th class="small-12 large-12 columns first last"
+                style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
+              <table style="width: 100%">
+                <tr>
+                  <th style="font-weight: bold; text-align: center">
+                    <div om:editable="html" om:id="nav-bott4">
+                        <p class="text-center"
+                            style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
+                            <a href="https://savilerowco.com/accessories"
+                                style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #0D2431; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">ACCESSORIES</a>
+                        </p>
+                    </div>
                   </th>
-              </tr>
-          </tbody>
+                  <th class="expander"
+                      style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
+                  </th>
+                </tr>
+            </table>
+            </th>
+          </tr>
+        </tbody>
       </table>
   
       <table style="background-color: #f3f7fa; display: table; padding: 0; position: relative; width: 100%" class="row">
-          <tbody>
-              <tr>
-                  <th class="small-12 large-12 columns first last"
-                      style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
-                      <table style="width: 100%">
-                          <tr>
-                              <th style="font-weight: bold; text-align: center">
-                                  <div om:editable="html" om:id="nav-bott5">
-                                      <p class="text-center"
-                                          style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
-                                          <a href="https://savilerowco.com/clearance"
-                                              style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #8d0e0e; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">CLEARANCE</a>
-                                      </p>
-                                  </div>
-                              </th>
-                              <th class="expander"
-                                  style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
-                              </th>
-                          </tr>
-                      </table>
-                  </th>
-              </tr>
+        <tbody>
+          <tr>
+              <th class="small-12 large-12 columns first last"
+                  style="font-weight: bold; margin: 0 auto; padding-bottom: 12px; padding-left: 16px; padding-right: 16px; padding-top: 12px; text-align: center; width: 584px; border-bottom: solid 2px #eaeff3">
+                  <table style="width: 100%">
+                      <tr>
+                          <th style="font-weight: bold; text-align: center">
+                            <div om:editable="html" om:id="nav-bott5">
+                              <p class="text-center"
+                                  style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; hyphens: none; margin: 0 0 10px; margin-bottom: 0px; text-align: center; width: 100%">
+                                  <a href="https://savilerowco.com/clearance"
+                                      style="-moz-hyphens: none; -webkit-hyphens: none; Margin-bottom: 0px; color: #8d0e0e; font-size: 18px; font-weight: bold; hyphens: none; line-height: 25px; margin-bottom: 0px; text-decoration: none; text-transform: uppercase; width: 100%">CLEARANCE</a>
+                              </p>
+                            </div>
+                          </th>
+                          <th class="expander"
+                              style="font-weight: bold; padding: 0 !important; text-align: center; visibility: hidden; width: 0">
+                          </th>
+                      </tr>
+                  </table>
+              </th>
+            </tr>
           </tbody>
-      </table>
-</columns>  
+        </table>
+      </columns>  
     </row>
 
-  <!-- Buttons END-->
+    <!-- Buttons END-->
+
+    <spacer size="16"></spacer>
+
+    <!-- Info -->
+
+    <row>
+      <columns large="1"></columns>
+      <columns large="10">
+        <p class="info-text">® Savile Row Company 2019</p>
+
+        <row>
+          <columns>
+            <center>
+              <menu>
+                <item href="https://twitter.com/SavileRowCo"><img class="float-center" style="width: 34px; height: 34px;" width="34" height="34" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/6ffca7afbf999611643840bba62122f7.png"></item>
+                <item href="http://www.pinterest.com/savilerowco/"><img class="float-center" style="width: 34px; height: 34px;" width="34" height="34" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/b3c0d1279273f029a9dfafc372648790.png"></item>
+                <item href="https://www.facebook.com/SavileRowCompany"><img class="float-center" style="width: 34px; height: 34px;" width="34" height="34" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/dab888c533a2e60085876758354f0034.png"></item>
+                <item href="https://www.instagram.com/savilerowco/"><img class="float-center" style="width: 34px; height: 34px;" width="34" height="34" src="https://cdn-ometria-com.s3-eu-west-1.amazonaws.com/emails/f53d5870efda6c47/b3c0d1279273f029a9dfafc372648790.png"></item>
+              </menu>
+            </center>
+          </columns>
+        </row>
+
+        <spacer size="16"></spacer>
+
+        <p class="info-text">The Savile Row Company offers expertly tailored products for Men and Women. Discover a wide range of formal shirts, business suits and ties as well casual wear spanning jackets, trousers, weekend shirts, chinos, polos and sleepwear.</p>
+          
+        <p class="info-text">The Savile Row Company Ltd, Unit 12, Station Road Industrial Estate, Magherafelt, Co Londonderry, Northern Ireland, BT45 5EY Customer Service: 028 7939 5005 Company Registration NI 23114.</p>
+      </columns>
+      <columns large="1"></columns>
+    </row>
+
+    <!-- Info END -->
+
+    <!-- Unsubscribe -->
+    
+    <row>
+      <columns>
+        <hr>
+      </columns>
+    </row>
+
+    <spacer size="8"></spacer>
+
+    <row>
+      <columns>
+        <center>
+          <a class="info-text" href="{{{{raw}}}}{{unsub}}{{{{/raw}}}}">Unsubscribe</a>
+        </center>
+      </columns>
+    </row>
+
+    <!-- Unsubscribe END -->
+
+    <spacer size="8"></spacer>
 
   <!-- Footer END -->
-  <center>
-    <menu>
-      <item href="#">Terms</item>
-      <item href="#">Privacy</item>
-      <item href="{{{{raw}}}}{{unsub}}{{{{/raw}}}}">Unsubscribe</item>
-    </menu>
-  </center> 
 
 </container>
