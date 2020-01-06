@@ -9,14 +9,16 @@ subject: My Hero Email Template Subject
   <spacer size="16"></spacer>
   <spacer class="hide-for-large" size="12"></spacer>
 
-  <row class="show-for-large">
-    <columns large="8">
+  <row>
+    <columns large="8" small="12">
       <small class="sub-head" om:editable om:id="13">Be quick, this exclusive offer won’t be around for long</small>
     </columns> 
-    <columns large="4">
+    <columns class="show-for-large" large="4">
       <p class="text-right"><small><a style="color: #0d2431;" href='{{{{raw}}}}{{ email.archive_url }}{{{{/raw}}}}'>View online here >></a></small></p>
     </columns>
   </row>
+
+  <spacer class="hide-for-large" size="24"></spacer>
 
   <row>
     <columns>
@@ -63,7 +65,9 @@ subject: My Hero Email Template Subject
               <a href="" om:editable="image" om:id="16"></a><img class="pre-header-img" width="50" height="46" src="http://placehold.it/50x46"></a>
             </columns>
             <columns large="10" small="12">
-              <h2 om:editable om:id="17" href="#" class="text-center pre-header">lorem ipsum dolar amet</h2>
+              <div om:editable="html" om:id="17">
+                <h2 href="#" class="text-center pre-header">lorem ipsum dolar amet</h2>
+              </div>
             </columns>
             <columns large="1" class="show-for-large align-right">
               <a href="" om:editable="image" om:id="18"></a><img class="pre-header-img float-right" width="50" height="46" src="http://placehold.it/50x46"></a>
@@ -88,35 +92,31 @@ subject: My Hero Email Template Subject
 
   <!-- Image END -->
 
-  <!-- Rich Text -->
+  <!-- Text -->
 
-  <div om:block="Rich Text">
+  <div om:block=" Text">
     <row>
       <columns large="12">
-        <div om:editable="rich-text" om:id="1"><!-- ometria_remove_begin -->
-          <div style="display: none">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
-            <h4></h4>
-            <h5></h5>
-            <h6></h6>
-            <a></a>
-            <strong></strong>
-            <em></em>
-            <u></u>
-            <p>Rich Text</p>
-            <s></s>
-            <span></span>
-            <ul><li></li></ul>
-            <ol><li></li></ol>
-          </div><!-- ometria_remove_end -->
+        <div om:editable="html" om:id="1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
         </div>
       </columns>
     </row>
   </div>
 
-  <!-- Rich Text END -->
+  <!-- Text END -->
+
+  <!-- Title Text -->
+
+  <div om:block="Title">
+    <row>
+      <columns large="12">
+        <div om:editable="html" om:id="70"><h2 style="color:#0D2431" class="text-center pre-header">lorem ipsum dolar amet</h2></div>
+      </columns>
+    </row>
+  </div>
+
+  <!-- Title Text END -->
 
   <!-- Callout -->
 
@@ -124,25 +124,9 @@ subject: My Hero Email Template Subject
     <row>
       <columns large="12">
         <callout>
-            <div om:editable="rich-text" om:id="1"><!-- ometria_remove_begin -->
-              <div style="display: none">
-                <h1></h1>
-                <h2></h2>
-                <h3></h3>
-                <h4></h4>
-                <h5></h5>
-                <h6></h6>
-                <a></a>
-                <strong></strong>
-                <em></em>
-                <u></u>
-                <p>Callout Text</p>
-                <s></s>
-                <span></span>
-                <ul><li></li></ul>
-                <ol><li></li></ol>
-              </div><!-- ometria_remove_end -->
-            </div>
+          <div om:editable="html" om:id="39">
+            <p style="color: white; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+          </div>
         </callout>
       </columns>
     </row>
@@ -301,65 +285,39 @@ subject: My Hero Email Template Subject
     <row>
       <columns large="6" small="12">
         <a href="" om:editable="image" om:id="5"><img class="mobile-spacer" width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
+        <div om:editable="html" om:id="81">
+          <p style="margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+        </div>
       </columns>
       <columns large="6" small="12">
         <a href="" om:editable="image" om:id="6"><img width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
+        <div om:editable="html" om:id="82">
+          <p style="margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+        </div>
       </columns>
     </row>
   </div>
 
   <!-- Two Col Image END -->
 
-  <!-- Two Col Rich Text -->
+  <!-- Two Col Text -->
 
-  <div om:block="Two Col Rich Text">
+  <div om:block="Two Col Text">
     <row>
       <columns large="6" small="12">
-        <div om:editable="rich-text" om:id="10"><!-- ometria_remove_begin -->
-          <div style="display: none">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
-            <h4></h4>
-            <h5></h5>
-            <h6></h6>
-            <a></a>
-            <strong></strong>
-            <em></em>
-            <u></u>
-            <p>Column One</p>
-            <s></s>
-            <span></span>
-            <ul><li></li></ul>
-            <ol><li></li></ol>
-          </div><!-- ometria_remove_end -->
+        <div om:editable="html" om:id="10">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
         </div>
       </columns>
       <columns large="6" small="12">
-        <div om:editable="rich-text" om:id="11"><!-- ometria_remove_begin -->
-          <div style="display: none">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
-            <h4></h4>
-            <h5></h5>
-            <h6></h6>
-            <a></a>
-            <strong></strong>
-            <em></em>
-            <u></u>
-            <p>Column Two</p>
-            <s></s>
-            <span></span>
-            <ul><li></li></ul>
-            <ol><li></li></ol>
-          </div><!-- ometria_remove_end -->
+        <div om:editable="html" om:id="11">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
         </div>
       </columns>
     </row>
   </div>
 
-  <!-- Two Col Rich Text END -->
+  <!-- Two Col Text END -->
 
   <!-- Image Left / Text Right -->
 
@@ -369,7 +327,9 @@ subject: My Hero Email Template Subject
         <a href="" om:editable="image" om:id="29"><img class="mobile-spacer" width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
       </columns>
       <columns large="6" small="12">
-        <p om:editable om:id="39">lorem ipsum</p>
+        <div om:editable="html" om:id="83">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+        </div>
       </columns>
     </row>
   </div>
@@ -381,7 +341,9 @@ subject: My Hero Email Template Subject
   <div om:block="Text Left / Image Right">
     <row>
       <columns class="mobile-spacer" large="6" small="12">
-        <p om:editable om:id="39">lorem ipsum</p>
+        <div om:editable="html" om:id="84">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+        </div>
       </columns>
       <columns large="6" small="12">
         <a href="" om:editable="image" om:id="29"><img width="276‬" height="200" alt="" src="http://placehold.it/552x400"></a>
@@ -397,89 +359,50 @@ subject: My Hero Email Template Subject
     <row>
       <columns large="3" small="12">
         <a href="" om:editable="image" om:id="19"><img class="mobile-spacer" width="179" height="200" style="width:100%" alt="" src="http://placehold.it/358x400"></a>
+        <div om:editable="html" om:id="85">
+          <p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+        </div>
       </columns>
       <columns large="3" small="12">
         <a href="" om:editable="image" om:id="20"><img class="mobile-spacer" width="179" height="200" style="width:100%" alt="" src="http://placehold.it/358x400"></a>
+        <div om:editable="html" om:id="86">
+          <p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+        </div>
       </columns>
       <columns large="3" small="12">
         <a href="" om:editable="image" om:id="21"><img width="179" height="200" alt="" style="width:100%" src="http://placehold.it/358x400"></a>
+        <div om:editable="html" om:id="87">
+          <p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
+        </div>
       </columns>
     </row>
   </div>
 
   <!-- Three Col Image END -->
 
-  <!-- Three Col Rich Text -->
+  <!-- Three Col Text -->
 
-  <div om:block="Three Col Rich Text">
+  <div om:block="Three Col Text">
     <row>
       <columns large="3" small="12">
-        <div om:editable="rich-text" om:id="22"><!-- ometria_remove_begin -->
-          <div style="display: none">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
-            <h4></h4>
-            <h5></h5>
-            <h6></h6>
-            <a></a>
-            <strong></strong>
-            <em></em>
-            <u></u>
-            <p>Column One</p>
-            <s></s>
-            <span></span>
-            <ul><li></li></ul>
-            <ol><li></li></ol>
-          </div><!-- ometria_remove_end -->
+        <div om:editable="html" om:id="22">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
         </div>
       </columns>
       <columns large="3" small="12">
-        <div om:editable="rich-text" om:id="23"><!-- ometria_remove_begin -->
-          <div style="display: none">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
-            <h4></h4>
-            <h5></h5>
-            <h6></h6>
-            <a></a>
-            <strong></strong>
-            <em></em>
-            <u></u>
-            <p>Column Two</p>
-            <s></s>
-            <span></span>
-            <ul><li></li></ul>
-            <ol><li></li></ol>
-          </div><!-- ometria_remove_end -->
+        <div om:editable="html" om:id="23">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
         </div>
       </columns>
       <columns large="3" small="12">
-        <div om:editable="rich-text" om:id="24"><!-- ometria_remove_begin -->
-          <div style="display: none">
-            <h1></h1>
-            <h2></h2>
-            <h3></h3>
-            <h4></h4>
-            <h5></h5>
-            <h6></h6>
-            <a></a>
-            <strong></strong>
-            <em></em>
-            <u></u>
-            <p>Column Three</p>
-            <s></s>
-            <span></span>
-            <ul><li></li></ul>
-            <ol><li></li></ol>
-          </div><!-- ometria_remove_end -->
+        <div om:editable="html" om:id="24">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit, elit vitae semper porttitor, odio neque tristique urna, at posuere velit mauris at eros.</p>
         </div>
       </columns>
     </row>
   </div>
 
-  <!-- Three Col Rich Text END -->
+  <!-- Three Col Text END -->
 
   <!-- Terms and Conditions -->
 
@@ -488,7 +411,7 @@ subject: My Hero Email Template Subject
       <columns large="12">
         <callout class="warning">
         <p class="text-center" style="font-size:12px; margin-top: 10px;"><strong>Terms and Conditions</strong></p>
-        <p class="text-center" style="font-size:12px;" om:editable om:id="15">This code is exclusive to the email recipient and may not be shared on any other site. This code may not be used in conjunction with any other offer including cashback or points. *This offer is not applicable to Made-to-Measure. Offer expires on 14th November</p>
+        <div om:editable="html" om:id="15"><p class="text-center" style="font-size:12px;">This code is exclusive to the email recipient and may not be shared on any other site. This code may not be used in conjunction with any other offer including cashback or points. *This offer is not applicable to Made-to-Measure. Offer expires on 14th November</p></div>
         </callout>
       </columns>
     </row>
