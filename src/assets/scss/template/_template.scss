@@ -34,7 +34,7 @@ h1 {
 
 .mobile-spacer {
   @media only screen and (max-width: 616px) {
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
   }
 }
 
@@ -122,6 +122,62 @@ h1 {
   }  
 }
 
+// Clearance Shirt Table
+
+.clearance-shirt-section {
+  border: solid 2px #8d0e0e;
+}
+
+.clearance-shirt-section-header {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #8d0e0e;
+}
+
+.clearance-shirt-table-text {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #8d0e0e;
+  font-size: 20px;
+  border-top: solid 4px white;
+  border-bottom: solid 5px white;
+
+  @media only screen and (max-width: 616px) {
+    font-size: 16px !important;
+  }
+}
+
+.clearance-shirt-wrap {
+  border: solid 1px #8d0e0e;
+}
+
+.clearance-shirt-table-cell {
+  border: solid 1px #8d0e0e;
+}
+
+.clearance-shirt-title {
+  background: #8d0e0e;
+}
+
+.clearance-shirt-title-text {
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 8px solid #8d0e0e;
+  
+  @media only screen and (max-width: 616px) {
+    font-size: 18px !important;
+  }  
+}
+
+
 // Footer 
 
 // Commitments 
@@ -154,7 +210,7 @@ h1 {
 // Info
 
 .info-text {
-  color: #cdcccc;
+  color: #a2a1a1;
   line-height: 2;
   text-align: center;
   font-size: 12px;
@@ -178,4 +234,11 @@ h1 {
 }
 
 
-// Unsub
+// Col IMGs 
+
+@media only screen and (max-width: 616px) {
+  .small-80column {
+    width: 80% !important;
+    max-width: 80% !important;
+  }
+}

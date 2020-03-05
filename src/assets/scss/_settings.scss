@@ -125,8 +125,8 @@ $callout-margin-bottom: 0;
 $callout-border: none;
 $callout-border-secondary: 1px solid darken($secondary-color, 20%);
 $callout-border-success: 1px solid darken($success-color, 20%);
-$callout-border-warning: 2px solid $primary-color;
-$callout-border-alert: 2px solid $primary-color;
+$callout-border-warning: 1px solid $primary-color;
+$callout-border-alert: 1px solid $primary-color;
 
 // 7. Menu
 // -------
